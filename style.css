@@ -1,0 +1,33 @@
+/* h1 is the target here you can play with other tages like p, div, etc */
+h1 {
+  background-color: lightblue; /* changes background color */
+}
+
+h6 {
+  font-size: 30px; /* changes font size */
+}
+
+p {
+  color: lightseagreen; /* changes text color */
+}
+
+div {
+  border: 1px solid black; /* create border around element */
+  /* use to create spacing within the box "SPACING FROM INSIDE " */
+  padding: 10px 20px 30px 40px; /* add padding to element to top, bottom, left, right */
+
+  /* use to create spacing between elements SPACING FROM OUTSIDE */
+  margin: 10px 20px 30px 40px; /* add margin to element to top, bottom, left, right */
+}
+
+/* class and Id selectors */
+
+/* this is how you target class in html see html_with_css_file */
+.class-name {
+  background-color: red; /* changes background color */
+}
+
+/* this is how you target id in html see html_with_css_file  */
+#id-name {
+  list-style: none; /* changes style for li */
+}
