@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+  --gradient: linear-gradient(45deg, #ec9f05, #ff4e00);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "monospace", sans-serif;
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.counter-div {
+  width: 50rem;
+  border: 1px solid var(--grey);
+  padding: 2rem;
+  /* background-color: #8775f5; */
+  background-image: var(--gradient);
+  color: var(--white);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.counter-div > * {
+  margin-bottom: 2rem;
+}
+
+.count {
+  font-size: 4rem;
+}
+
+button {
+  padding: 1rem;
+  margin: 0 1rem;
+  font-size: 4rem;
+  font-weight: 900;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  background: hsl(39, 100%, 60%);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+
+.front {
+  display: block;
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: none;
+  font-size: 2rem;
+  background-color: hsl(39, 100%, 50%);
+  color: white;
+  transform: translateY(-6px);
+}
+
+button:active .front {
+  transform: translateY(-2px);
+}
+
+
+#number{
+    font-weight: 700;
+    font-size: 4rem;
+    font-family: monospace;
+}
