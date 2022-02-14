@@ -25,7 +25,6 @@ html {
 body {
   font-family: "monospace", sans-serif;
   font-size: 3rem;
-  background-color: rebeccapurple;
 }
 
 p {
@@ -44,20 +43,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 50rem;
-  border: 1px solid var(--grey);
-  padding: 2rem;
-  background-image: var(--gradient);
-  color: var(--white);
-  text-align: center;
-  border-radius: 5px;
+  height: 80vh;
+  
 }
 
 .counter-div {
   width: 50rem;
   border: 1px solid var(--grey);
   padding: 2rem;
+  /* background-color: #8775f5; */
   background-image: var(--gradient);
   color: var(--white);
   text-align: center;

@@ -22,6 +22,7 @@ function generateRandomNumber() {
   // return randomNumnerInRange;
 }
 
+// selects the element named generate-number
 document
   .querySelector("#generate-number")
   .addEventListener("click", generateRandomNumber);
