@@ -21,9 +21,9 @@ document.querySelector("#check-pailndrom").addEventListener("click", () => {
   const output = document.querySelector("#output");
   var str = document.querySelector("#pailndrom-input");
   if (checkPailndromWithReverse(str.value)) {
-    output.innerHTML = `Yes, ${str.value} is pailndrom`;
+    output.innerHTML = `Yes, ${str.value} is palindrome`;
   } else {
-    output.innerHTML = `No, ${str.value} is not pailndrom`;
+    output.innerHTML = `No, ${str.value} is not palindrome`;
   }
   str.value = "";
 });
