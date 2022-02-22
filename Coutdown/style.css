@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+  --gradient: linear-gradient(45deg, #005490, #31326f);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-image: url("https://cdn.pixabay.com/photo/2018/03/26/14/07/space-3262811_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  color: white;
+  /* opacity: 0.3; */
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100vh;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+button {
+  padding: 1rem;
+  margin: 0 1rem;
+  font-weight: 900;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background: hsl(39, 100%, 60%);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+
+.front {
+  display: block;
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.2rem;
+  background-color: hsl(39, 100%, 50%);
+  color: white;
+  transform: translateY(-6px);
+}
+
+button:active .front {
+  transform: translateY(-2px);
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form_field {
+  width: 60%;
+  padding: 12px 24px;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  /* border-bottom: 1px solid #eee; */
+  color: black;
+  outline: 0;
+  font-size: 1.2rem;
+  /* background: transparent; */
+  transition: border-color 0.1s;
+}
+.form_field:focus {
+  /* padding-bottom: 6px; */
+  font-weight: 800;
+  border-width: 2px;
+  border-image: linear-gradient(to right, #ec9f05, #ff4e00);
+  border-image-slice: 1;
+}
+
+#timer {
+  display: flex;
+  /* flex-direction: column; */
+  margin-top: 20px;
+}
+
+#timer div {
+  /* background-color: #000000; */
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  color: #ffffff;
+  width: 110px;
+  height: 110px;
+  border-radius: 5px;
+  font-size: 35px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.timer-label {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#timer div span {
+  display: flex;
+  flex-direction: column;
+  margin-top: -2px;
+  font-size: 30px;
+  font-weight: 500;
+}
