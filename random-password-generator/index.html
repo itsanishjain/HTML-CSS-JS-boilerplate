@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>password generator</title>
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container box">
+        <h1>Password Generator</h1>
+
+        <div class="p-header">
+          <input type="text" id="generatedPassword" style="color: white;" />
+          <button class="copy" id="copy">Copy</button>
+        </div>
+
+        <div class="p-body">
+          <div class="form-field">
+            <label for="p-length">Password Length</label>
+            <p id="sliderValue">12</p>
+            <!-- <input type="number" id="p-length" value="12" min="8" max="30" /> -->
+            <input
+              type="range"
+              min="1"
+              max="50"
+              value="10"
+              class="slider"
+              id="myRange"
+            />
+          </div>
+
+          <div class="form-field">
+            <label for="p-uppercase">Include uppercase</label>
+            <input type="checkbox" checked id="p-uppercase" />
+          </div>
+
+          <div class="form-field">
+            <label for="p-lowercase">Include lowercase</label>
+            <input type="checkbox" checked id="p-lowercase" />
+          </div>
+
+          <div class="form-field">
+            <label for="p-number">Include number</label>
+            <input type="checkbox" checked id="p-number" />
+          </div>
+
+          <div class="form-field">
+            <label for="p-symbol">Include symbols</label>
+            <input type="checkbox" checked id="p-symbol" />
+          </div>
+
+          <!-- <button id="submit">Generate Password</button> -->
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

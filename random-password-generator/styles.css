@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: #fc5296;
+  background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%);
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* css */
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  width: 40rem;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  font-weight: 900;
+  color: black;
+  border-bottom: 1px solid var(--grey);
+  font-size: 1.6rem;
+}
+
+.form-field label {
+  cursor: pointer;
+}
+
+.p-header {
+  position: relative;
+}
+
+.p-header input {
+  width: 100%;
+  height: 100%;
+  background-color: #3f0d12;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 1.4rem;
+  border-radius: 3px;
+  color: var(--white);
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.p-header button,
+.form-field input[type="number"] {
+  background-color: var(--white);
+  padding: 3px 5px;
+  outline: none;
+  border: none;
+  border-radius: 3px 0 0 0;
+  font-size: 1.4rem;
+}
+
+.p-header button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+#submit {
+  width: 100%;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #3f0d12;
+  background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+
+  backdrop-filter: blur(30px);
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+#submit:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* SLIDER CSS */
+.slider {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 15px;
+  background: #000;
+  outline: none;
+  border: 5px solid #3f0d12;
+  border-radius: 8px;
+}
+
+/* for chrome/safari */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 10px;
+  background: #000;
+  cursor: pointer;
+  border: 5px solid white;
+  border-radius: 8px;
+}
+
+/* for firefox */
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 60px;
+  background: #000;
+  cursor: pointer;
+  border: 5px solid white;
+  border-radius: 50px;
+}
