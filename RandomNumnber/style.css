@@ -46,7 +46,6 @@ img {
   align-items: center;
   height: 100vh;
   width: 50rem;
-  border: 1px solid var(--grey);
   padding: 2rem;
   color: var(--white);
   text-align: center;
